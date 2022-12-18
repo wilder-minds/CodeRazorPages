@@ -1,0 +1,13 @@
+@page
+@model IndexModel
+<h1>Model.Title</h1>
+<p>Today is @DateTime.Now.ToShortDateString()</p>
+<h3>Invoices</h3>
+@foreach (var invoiceAmount in Model.InvoiceTotals)
+{
+  <div>$ @invoiceAmount.ToString("0.00")</div>
+}
+
+
+
+

@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer utilities {
+  h1 {
+    @apply text-2xl font-bold;
+  }
+
+  h2 {
+    @apply text-xl font-bold;
+  }
+
+  h3 {
+    @apply text-lg font-bold;
+  }
+
+  h4 {
+    @apply text-lg;
+  }
+
+  body {
+    @apply bg-gray-800;
+  }
+
+    body > div {
+      @apply container mx-auto bg-white p-2 min-h-screen;
+    }
+
+  label {
+    @apply font-bold block;
+  }
+
+  header {
+    @apply flex justify-end w-full;
+  }
+
+    header a {
+      @apply bg-green-800 text-white hover:bg-green-600 border rounded p-2 mx-1;
+    }
+
+  input[type=text],
+  input[type=email],
+  textarea {
+    @apply w-full block border text-lg rounded border-gray-300 focus:bg-yellow-50;
+  }
+
+  button[type=submit] {
+    @apply bg-green-800 text-white rounded hover:bg-green-600 p-2 my-1 border border-green-500;
+  }
+}

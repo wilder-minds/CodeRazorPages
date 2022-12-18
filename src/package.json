@@ -1,0 +1,12 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./Styles/site.src.css -o ./wwwroot/css/site.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
